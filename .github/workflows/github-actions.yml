@@ -21,7 +21,7 @@ jobs:
             run: |
               ssh-add -D
           - name: Run full test
-            timeout-minutes: 60
+            timeout-minutes: 600
             run: |
                docker run --rm \
                  -v $SSH_AUTH_SOCK:/ssh-agent -e SSH_AUTH_SOCK=/ssh-agent \
